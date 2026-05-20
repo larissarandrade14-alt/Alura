@@ -1,4 +1,4 @@
-﻿namespace Aula02;
+﻿namespace Alura;
 
 public class Program
 {
