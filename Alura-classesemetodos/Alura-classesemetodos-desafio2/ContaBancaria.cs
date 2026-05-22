@@ -1,4 +1,7 @@
-﻿class ContaBancaria
+﻿/*  1. Criar uma classe que representa uma conta bancária, com um número indicador, titular, saldo e senha.
+    2. Criar um objeto do tipo Conta, adicionar dados e mostrar as informações titular e saldo no console, utilizando interpolação de strings.
+    3. Desenvolver um método da classe Conta que exibe suas informações.*/
+class ContaBancaria
 {
     public string titular;
     public string senha;
