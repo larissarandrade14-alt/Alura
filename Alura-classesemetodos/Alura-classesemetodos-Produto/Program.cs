@@ -28,11 +28,11 @@
         {
             if (value < 0)
             {
-                Console.WriteLine("O estoque não pode ser negativo.");
+               _estoque = 0;
             }
             _estoque = value;
         }
     }
-
+    public string Descricao => $"Produto: {Nome}, Preço: {Preco}, Marca: {Marca}, Quantidade em Estoque: {Estoque}";
 
 }
