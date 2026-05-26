@@ -3,10 +3,10 @@
     3. Desenvolver um método da classe Conta que exibe suas informações.*/
 class ContaBancaria
 {
-    public string titular;
-    public string senha;
-    public int numeroIdentificacao;
-    public double saldo;
+    public string titular {get;set}
+    public string senha { get; set}
+    public int numeroIdentificacao { get; set}
+    public double saldo { get; set}
 
     public void ExibirDadosCompletos()
     {
