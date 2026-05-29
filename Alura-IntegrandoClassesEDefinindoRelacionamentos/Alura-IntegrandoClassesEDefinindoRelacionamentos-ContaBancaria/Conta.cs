@@ -2,18 +2,23 @@
      número da conta, saldo e limite, bem como um método que devolva as informações da conta de forma detalhada.
     2.Instanciar um objeto do tipo Conta e um do tipo Titular e mostrar as informações de Titular, a partir da Conta.*/
 
-public class Titular
-{
-    public string Nome { get; set; }
-    public string CPF { get; set; }
-}
+
 public class Conta
 {
-    public Titular Titular { get; set; }
-    public int Agencia { get; set; }
-    public int NumeroConta { get; set; }
-    public double Saldo { get; set; }
-    public double Limite { get; set; }
+    public Conta(Titular titular, int agencia, int numeroConta, double saldo, double limite)
+    {
+        Titular = titular;
+        Agencia = agencia;
+        NumeroConta = numeroConta;
+        Saldo = saldo;
+        Limite = limite;
+    }
+
+    public Titular Titular { get;  }
+    public int Agencia { get; }
+    public int NumeroConta { get;  }
+    public double Saldo { get;  }
+    public double Limite { get;  }
 
     public void ExibirInformacoes()
     {

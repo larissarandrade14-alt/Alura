@@ -1,12 +1,25 @@
-﻿Album albumSkank = new Album();
-albumSkank.Nome = "Calango";
-Musica musica1 = new Musica();
-musica1.Nome = "Jackie Tequila";
-musica1.Duracao = 250;
-Musica musica2 = new Musica();
-musica2.Nome = "Te ver";
-musica2.Duracao = 276;
+﻿Banda skank = new Banda("Skank");
+
+Album albumSkank = new Album("Calango");
+
+Musica musica1 = new Musica(skank, "Jackie Tequila")
+{
+    Duracao = 250,
+    DisponivelPlano = true,
+
+};
+Musica musica2 = new Musica(skank, "Te ver")
+{
+    Duracao = 276,
+    DisponivelPlano = false,
+};
 
 albumSkank.AdicionarMusica(musica1);
 albumSkank.AdicionarMusica(musica2);
+skank.AdicionarAlbum(albumSkank);
+
+musica1.ExibirInformacoes();
+musica2.ExibirInformacoes();
+
 albumSkank.ExibirMusicas();
+skank.ExibirAlbuns();

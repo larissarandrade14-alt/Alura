@@ -3,16 +3,26 @@
 class Album
 {
     private List<Musica> musicas = new List<Musica>();
-    public string Nome { get; set; }
+
+    public Album(string nome)
+    {
+        Nome = nome;
+    }
+
+    public string Nome { get; }
     public int DuracaoTotal => musicas.Sum(m => m.Duracao);
 
     public void AdicionarMusica (Musica musica)
     {
         musicas.Add(musica);
     }
+    public void AdicionarGenero(Genero genero)
+    {
+        Console.WriteLine($"Gênero {genero.Nome} adicionado ao álbum {Nome}");
+    }
     public void ExibirMusicas()
     {
-        Console.WriteLine($"Músicas do álbum {Nome}:\n");
+        Console.WriteLine($"\nMúsicas do álbum {Nome}:\n");
         foreach (var musica in musicas)
         {
             Console.WriteLine($"Musica: {musica.Nome}");
