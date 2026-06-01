@@ -10,7 +10,7 @@ Musica musica1 = new Musica(skank, "Jackie Tequila")
 };
 Musica musica2 = new Musica(skank, "Te ver")
 {
-    Duracao = 276,
+    Duracao = 277,
     DisponivelPlano = false,
 };
 
