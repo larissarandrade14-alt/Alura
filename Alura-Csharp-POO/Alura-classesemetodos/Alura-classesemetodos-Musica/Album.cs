@@ -1,6 +1,6 @@
 ﻿using System.Threading.Channels;
 
-class Album
+public class Album
 {
     private List<Musica> musicas = new List<Musica>();
 

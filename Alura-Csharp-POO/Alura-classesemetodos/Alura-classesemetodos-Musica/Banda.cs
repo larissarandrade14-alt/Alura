@@ -1,4 +1,5 @@
-﻿    internal class Banda
+﻿    public class Banda
+    {
     {
     private List<Album> albuns = new List<Album>();
 
